@@ -13,3 +13,6 @@ This app serves as a guided tutorial for building a web application and an intro
     ```
 4. Install Requirements `pip install -r requirements.txt`
 5. Run tests `python -m unittest`
+
+## Further Reading
+Check the wiki tab for more
