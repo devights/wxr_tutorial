@@ -44,15 +44,15 @@ def get_datettime_from_timestamp(timestamp):
 
 def get_current_temperature():
     # Should return the current temperature
-    raise NotImplemented
+    return NotImplemented
 
 
 def get_current_windspeed():
     # Should return the current windspeed
-    raise NotImplemented
+    return NotImplemented
 
 
 def get_hourly_temperature():
     # should return a list of dictionaries with a time and temperature
     # eg [{'time': time, 'temp': temp}, {'time': time, 'temp': temp}]
-    raise NotImplemented
+    return NotImplemented
