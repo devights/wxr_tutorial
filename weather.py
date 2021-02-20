@@ -55,4 +55,15 @@ def get_current_windspeed():
 def get_hourly_temperature():
     # should return a list of dictionaries with a time and temperature
     # eg [{'time': time, 'temp': temp}, {'time': time, 'temp': temp}]
-    raise NotImplemented
+    data = get_data()
+    hourly_temps = []
+    hourly = data['hourly']
+    for hour in hourly:
+        hourly_time = get_datettime_from_timestamp(hour['dt'])
+        hourly_temp = hour['temp']
+        parsed_hour = {'time': hourly_time,
+                       'temp': hourly_temp}
+        hourly_temps.append(parsed_hour)
+
+    return hourly_temps
+
